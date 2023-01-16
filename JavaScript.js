@@ -13,6 +13,11 @@ giroHours = giroHours + Minutes / 60 * 30;
 giroMinutes = Minutes / 60 *360;
 giroSeconds = Seconds /60 * 360;
     
+document.getElementById("hDigital").innerHTML = hours;
+document.getElementById("mDigital").innerHTML = Minutes;
+document.getElementById("sDigital").innerHTML = Seconds;
+
+
 document.querySelector(".horas").style.transform= "rotate(" + giroHours + ".deg)";
 document.querySelector(".minutos").style.transform= "rotate(" + giroMinutes + ".deg)";
 document.querySelector(".segundos").style.transform= "rotate(" + giroSeconds + ".deg)";
@@ -34,6 +39,10 @@ function ChangeOclock(){
     giroHours = giroHours + Minutes / 60 * 30;
     giroMinutes = Minutes / 60 *360;
     giroSeconds = Seconds /60 * 360;
+
+    document.getElementById("hDigital").innerHTML = hours;
+    document.getElementById("mDigital").innerHTML = Minutes;
+    document.getElementById("sDigital").innerHTML = Seconds;
     
     document.querySelector(".horas").style.transform= "rotate(" + giroHours + ".deg)";
     document.querySelector(".minutos").style.transform= "rotate(" + giroMinutes + ".deg)";

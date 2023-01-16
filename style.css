@@ -60,10 +60,38 @@ img{
 }
 
 .containerReloj .RelojDigital{
+    display: flex;
     width: 60%;
     max-width: 560px;
     top: 2%;
     position: absolute;
-    background-color: beige;
     height: 20%;
+}
+
+
+.RelojDigital .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family:cursive;
+    font-size: 400%;
+    width: 33%;
+    height: 100%;
+}
+
+#hDigital{
+    margin-right: 5%;
+    background-color: aqua;
+}
+
+#mDigital{
+    margin-right: 5%;
+    background-color: red;
+}
+
+#sDigital{
+    margin-right: 5%;
+    background-color: green;
 }
